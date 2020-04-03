@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" type="text/css" href="pjs_styles.css">
+    <script src="pjs.js"></script>
+    <script src="https://kit.fontawesome.com/526982f0d2.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <img src="https://i.pinimg.com/originals/ce/4a/4a/ce4a4abcc8ca694c94a7c91917102aca.png" class="charimg">
+    <div class="head">
+      <i class="fab fa-d-and-d"></i>Eifnhearth
+      <div class="subhead">Humano Rogue Nivel 1</div>
+    </div>
+    <div class="stats">
+    <span class="title">Hoja de personaje</span>
+    <form class="statboxL">
+      <label for="current">HP</label>
+      <input type="number" name="current" value="9">
+      <label for="max">/</label>
+      <input type="number" name="max" value="9" disabled>
+    </form>
+      <div class="statboxL">
+        <span class="statL">Velocidad</span>
+        <span class="statnum">30ft</span>
+      </div>
+      <div class="statboxL">
+        <span class="statL">Clase de armadura</span>
+        <span class="statnum"><input type="number" name="current" value="14"></span>
+      </div>
+      <div class="statboxL">
+        <span class="statL">Inspiracion</span>
+        <span class="statnum"><input type="number" name="current" value="0"></span>
+      </div>
+    </div>
+    <div class="stats">
+      <span class="title">Atributos</span>
+      <div class="statbox">
+        <span class="stat">Fuerza</span>
+        <span class="statnum">11(+0)</span>
+      </div>
+      <div class="statbox">
+        <span class="stat">Destreza</span>
+        <span class="statnum">17(+3)</span>
+      </div>
+      <div class="statbox">
+        <span class="stat">constitucion</span>
+        <span class="statnum">13(+1)</span>
+      </div>
+      <div class="statbox">
+        <span class="stat">Inteligencia</span>
+        <span class="statnum">11(+0)</span>
+      </div>
+      <div class="statbox">
+        <span class="stat">sabiduria</span>
+        <span class="statnum">15(+2)</span>
+      </div>
+      <div class="statbox">
+        <span class="stat">Carisma</span>
+        <span class="statnum">16(+3)</span>
+      </div>
+    </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event,'skills')">Habilidades</button>
+      <button class="tablinks" onclick="openTab(event,'actions')">Acciones</button>
+      <button class="tablinks" onclick="openTab(event,'feats')">Rasgos</button>
+	    <button class="tablinks" onclick="openTab(event,'story')">Historia</button>
+      <button class="tablinks" onclick="openTab(event,'equip')">Equipo</button>
+    </div>
+    <div id="skills" class="tabcontent">
+      <div class="stats">
+        <span class="title">Habilidades</span>
+        <table>
+        <tr><td class="bgblack">*Acrobacia(Dex)</td><td>+ 3</td><td class="bgblack">Medicina(Wis)</td><td>+ 2</td></tr>
+        <tr><td class="bgblack">Manejo de animales(Wis)</td><td>+ 2</td><td class="bgblack">Naturaleza(Int)</td><td>+ 0</td></tr>
+        <tr><td class="bgblack">Arcano(Int)</td><td>+ 0</td><td class="bgblack">*Percepción(Wis)</td><td>+ 2</td></tr>
+        <tr><td class="bgblack">*Atletismo(Str)</td><td>+ 0</td><td class="bgblack">Actuación(Cha)</td><td>+ 3</td></tr>
+        <tr><td class="bgblack">Engaño(Cha)</td><td>+ 3</td><td class="bgblack">*Persuasion(Cha)</td><td>+ 3</td></tr>
+        <tr><td class="bgblack">*Historia(Int)</td><td>+ 0</td><td class="bgblack">Religion(Int)</td><td>+ 0</td></tr>
+        <tr><td class="bgblack">Perspicacia(Wis)</td><td>+ 2</td><td class="bgblack">*Robo(Dex)</td><td>+ 3</td></tr>
+        <tr><td class="bgblack">Intimidacion(Cha)</td><td>+ 3</td><td class="bgblack">*Sigilo(Dex)</td><td>+ 3</td></tr>
+        <tr><td class="bgblack">Investigación(Int)</td><td>+ 0</td><td class="bgblack">Supervivencia(Wis)</td><td>+ 2</td></tr>
+        </table>
+      </div>
+      <div class="stats">
+        <span class="title">Proeficiencias (Bonus +2)</span>
+        <table>
+        <tr><td class="bgblack">Tiradas de salvacion</td> <td>Dex +5, Int +2</td></tr>
+        <tr><td class="bgblack">Herramientas</td><td>Barajo de cartas, herramientas de ladron</td></tr>
+        <tr><td class="bgblack">Habilidades</td><td>Sigilo, Acrobacia, Atletismo, Percepción, Historia, Persuasion</td></tr>
+        <tr><td class="bgblack">Armadura</td><td>Armadura ligera (cuero endurecido)</td></tr>
+        <tr><td class="bgblack">Armas</td><td>Armas simples, Ballesta, Espada larga, Estoque, Espada corta</td></tr>
+        <tr><td class="bgblack">Sentidos</td><td>Percepcion pasiva 15</td></tr>
+        <tr><td class="bgblack">Lenguas</td><td>Comun, Elfico, Dracónico, Jerga de Ladrones</td><tr>
+        </table>
+      </div>
+    </div>
+    <div id="actions" class="tabcontent">
+      <div class="stats">
+        <span class="title">Acciones</span>
+        <table>
+        <tr><th>Nombre</th><th>Descripcion</th><th>Daño</th></tr>
+        <tr><td class="bgblack">Dado de Golpe</td><td>1d8 por nivel de pícaro.</td></tr>
+        <tr><td class="bgblack">Espada corta</td><td>Melee Weapon Attack: +5 to hit, reach 5 ft., one target.</td><td>Hit: 1d6 + 3 piercing damage.</td></tr>
+        <tr><td class="bgblack">Daga</td><td>Melee Weapon Attack: +5 to hit, reach 5 ft., one target.</td><td>Hit: 1d4 + 3 piercing damage.</td></tr>
+        <tr><td class="bgblack">Ballesta</td><td>Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target.</td><td>Hit: 1d6 + 3 piercing damage.</td></tr>
+        </table>
+        <span class="title">Acciones Bonus</span>
+        <table>
+        <tr><th>Nombre</th><th>Descripcion</th></tr>
+        <tr><td class="bgblack">Ataque Furtivo</td><td>Una vez por turno, si tienes ventaja en la tirada de ataque puedes infligir 1d6 de daño extra a la criatura que golpees. El ataque debe usar un arma sutil o a distancia. No necesitas ventaja en la tirada de ataque para realizar un Ataque Furtivo si tu objetivo tiene otro adversario a 5 pies (1,5 metros) que no esté incapacitado y tú no tengas desventaja en esta tirada</td></tr>
+        </table>
+      </div>
+    </div>
+    <div id="feats" class="tabcontent">
+      <div class="stats">
+        <span class="title">Rasgos de la clase</span>
+        <table>
+        <tr><th>Nombre</th><th>Descripcion</th></tr>
+        <tr><td class="bgblack">Dado de Golpe</td><td>1d8 por nivel de pícaro.</td></tr>
+        <tr><td class="bgblack">HP a nivel 1</td><td>8 + tu modificador de Constitución.</td></tr>
+        <tr><td class="bgblack">HP a niveles superiores</td><td>1d8 (o 5) + tu modificador de Constitución por cada nivel de pícaro después del primer nivel.</td></tr>
+        <tr><td class="bgblack">Ataque Furtivo</td><td>Una vez por turno, si tienes ventaja en la tirada de ataque puedes infligir 1d6 de daño extra a la criatura que golpees. El ataque debe usar un arma sutil o a distancia. No necesitas ventaja en la tirada de ataque para realizar un Ataque Furtivo si tu objetivo tiene otro adversario a 5 pies (1,5 metros) que no esté incapacitado y tú no tengas desventaja en esta tirada</td></tr>
+        <tr><td class="bgblack">Experto</td><td>Doble bonus de proeficiencia para sigilo y percepción</td></tr>
+
+        </table>
+        <span class="title">Rasgos de la raza</span>
+        <table>
+        <tr><th>Nombre</th><th>Descripcion</th></tr>
+        <tr><td class="bgblack">Incremento de Puntuación de Característica</td><td>Todas tus puntuaciones de característica mejoran en 1.</td></tr>
+        <tr><td class="bgblack">Incremento de Habilidad</td><td>Ganas competencia en Robo</td></tr>
+        <tr><td class="bgblack">Incremento de Dote</td><td>Ganas un dote (Alerta)</td></tr>
+        <tr><td class="bgblack">Alerta</td><td>Como siempre estás vigilando el peligro, ganas un +5 a la iniciativa, no puedes ser sorprendido mientras estés consciente, otras criaturas no pueden tomar ventaja en tiradas de ataque contra ti como resultado de estar ocultos de ti.</td></tr>
+        </table>
+      </div>
+    </div>
+    <div id="story" class="tabcontent">
+      <div class="stats">
+        <span class="title">Historia</span>
+        <table>
+        <tr><td class="bgblack">Trasfondo</td><td>
+        <p>Nacido en cuna noble en una de las ciudades estado de Faerûn, estaba destinado a heredar los dominios de su padre Daifnhearth, quien reinaba rigurosamente con puño de hierro.</p>
+        <p>Un mañana, recorría junto a su padre el mercado principal y presenciaron como un niño robaba una manzana, en aquel momento Daifnhearth envió a sus guardias a ejecutar al niño, este hecho toco profundamente a aquel joven noble y lo hizo reflexionar sobre cómo ser un gobernante justo durante semanas.</p>
+        <p>Cada día se adentraba más en sus pensamientos, pero sin importar cuanto tiempo paso no lograba concebir una forma de llevar sus ideales a una realidad tangible.</p>
+        <p>Consulto a diversos eruditos, sabios y místicos, pero ninguno le dio una respuesta que lo convenciera.</p>
+        <p>Pasados los días su padre decidió tomar el asunto en sus manos y lo instruyo personalmente, le enseño sobre hechos históricos, cuan enfermo estaba el hombre y como para mantener la paz se debía gobernar con crueldad.</p>
+        <p>La frialdad de su padre no pudo penetrar el corazón de Eifnhearth, quien decidió viajar por el mundo y experimentarlo por su cuenta, hasta que algún día pueda volver a su hogar y probar que se puede gobernar con amor y justicia.</p>
+        <p>Suele debatirse internamente entre lo que es correcto y lo que no, a veces el fin justifica los métodos.</p>
+        </td></tr>
+        <tr><td class="bgblack">Personalidad</td><td>
+          A pesar de ser noble, no me ubico por encima de otras personas.
+        </td></tr>
+        <tr><td class="bgblack">Ideales</td><td>
+          Me respetan debido a mi posición, pero creo todos debemos ser tratados con igual dignidad.
+        </td></tr>
+        <tr><td class="bgblack">Lazos</td><td>
+          Mi lealtad a mi pueblo es inquebrantable.
+        </td></tr>
+        <tr><td class="bgblack">Fallas</td><td>
+          Suelo debatirme internamente entre lo que es correcto y lo que no, a veces el fin justifica los métodos.
+        </td></tr>
+        </table>
+      </div>
+    </div>
+    <div id="equip" class="tabcontent">
+      <div class="stats">
+        <span class="title">Equipo</span>
+        <table>
+          <tr><th>Nombre</th><th>Descripcion</th></tr>
+          <tr><td class="bgblack">Espada corta</td><td></td></tr>
+          <tr><td class="bgblack">Dos Dagas</td><td></td></tr>
+          <tr><td class="bgblack">Ballesta ligera</td><td>Incluye 20 municiones</td></tr>
+          <tr><td class="bgblack">Kit de explorador</td><td></td></tr>
+          <tr><td class="bgblack">Armadura de cuero</td><td></td></tr>
+          <tr><td class="bgblack">Ropas finas</td><td></td></tr>
+          <tr><td class="bgblack">Un anillo con sello</td><td></td></tr>
+          <tr><td class="bgblack">Un pergamino con tu genealogía</td><td></td></tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

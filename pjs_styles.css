@@ -1,0 +1,195 @@
+body{
+  margin: 0;
+}
+.charimg{
+  position: absolute;
+  margin-top: 0;
+  margin-left: 60%;
+  z-index: 1;
+  width: 40%;
+  height: 100%;
+}
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Podkova&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mukta&display=swap');
+.box {
+  z-index: 2;
+	color:#7C706E;
+	font-family: 'Mukta', sans-serif;
+	text-align:center;
+	font-size:1.5rem;
+	position: relative;
+  background-color: white;
+  height: auto;
+  width: 98%;
+	padding:1%;
+	line-height:Auto;
+}
+.button {
+  z-index: 2;
+	font-family: 'Nunito', sans-serif;
+	position: relative;
+	user-select: none;
+	width: 49%;
+	Height:4rem;
+	color:white;
+  background-color: #D94C4C;
+	border-radius: 8px;
+}
+.button:active {
+		background-color: #C24646;
+	}
+
+/* Style the tab */
+.tab {
+  display: flex;
+  z-index: 2;
+	position: relative;
+  overflow: hidden;
+  width: 74%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	font-family: 'Mukta', sans-serif;
+	position: relative;
+	user-select: none;
+	color:Black;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	color:white;
+  background-color: Black;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	color:white;
+  background-color: Black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  z-index: 2;
+	position: relative;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.head{
+  z-index: 2;
+	position: relative;
+	padding:5% 0 2% 0;
+	width: 74%;
+	Height:4rem;
+  font-size: 2rem;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+}
+.subhead{
+	position: relative;
+	user-select: none;
+  font-size: 1rem;
+	font-family: 'Podkova', serif;
+	text-align:center;
+}
+.stats{
+  display: flex;
+  z-index: 2;
+	position: relative;
+  overflow: hidden;
+  width: 74%;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.title{
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 100%;
+  font-size: 17px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+input{
+  border: none;
+  width: 2rem
+}
+table{
+margin-left: 20%;
+margin-right: 20%;
+height: 100%;
+width: 100%;
+text-align: center;
+}
+.statbox{
+  text-align: center;
+  margin: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 10vh;
+  width: 13vh;
+  border: solid 1px black;
+  align-items: center;
+  line-height: 30px;
+}
+.statboxL{
+  margin: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 10vh;
+  width: 21vh;
+  border: solid 1px black;
+  align-items: center;
+  line-height: 30px;
+}
+.stat{
+  height: 50%;
+  width: 100%;
+  position: relative;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+td{
+  padding-right: 5px;
+  border: solid black 1px;
+}
+.bgblack{
+  background-color: black;
+  color: white;
+}
+.statL{
+  height: 50%;
+  width: 100%;
+  position: relative;
+  font-size: 12px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.statnum{
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  position: relative;
+  font-size: 17px;
+  color: black;
+}
